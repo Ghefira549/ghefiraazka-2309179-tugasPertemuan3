@@ -1,0 +1,37 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package pkg2309179_ghefira.azka.fataharni_tugas3;
+
+/**
+ *
+ * @author FARIZ
+ */
+ import java.util.Scanner;
+public class AzkaFataharni_Tugas3 {
+  
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("No.1. Mengecek Urutan Karakter");
+        Scanner inputObjk = new Scanner(System.in);
+        System.out.print("Masukkan tiga huruf kecil : ");
+        String input = inputObjk.next();
+        char huruf1=input.charAt(0); //menginisialisasi masing-masing karakter pada string yang diinputkan
+        char huruf2=input.charAt(1);
+        char huruf3=input.charAt(2);
+        if(!"aiueo".contains(String.valueOf(huruf1)) && "aiueo".contains(String.valueOf(huruf2))
+                && !"aiueo".contains(String.valueOf(huruf3))){
+                System.out.println("Karakter Memiliki Urutan Konsonan-Vokal-Konsonan");
+            }else{
+            System.out.println("Karkter Tidak Memiliki Urutan Konsonan-Vokal-Konsonan");
+        }
+        
+        
+        
+    }
+    
+}
