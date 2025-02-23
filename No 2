@@ -1,0 +1,37 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package pkg2309179_ghefira.azka.fatharani_tugas3_no2;
+
+/**
+ *
+ * @author FARIZ
+ */
+import java.util.Scanner;
+public class AzkaFatharani_Tugas3_No2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("No. 2. Mengecek Apakah Bangun Termasuk Kubus Atau Bukan");
+       Scanner inputObjk=new Scanner(System.in);
+        System.out.println("Masukkan Tiga Sisi Dari Sebuah Bangun : ");
+        System.out.print("Sisi 1 : ");
+        int sisi1=inputObjk.nextInt();
+        System.out.print("Sisi 2 : ");
+        int sisi2=inputObjk.nextInt();
+        System.out.print("Sisi 3 : ");
+        int sisi3=inputObjk.nextInt();
+        
+        if(sisi1==sisi2 && sisi2==sisi3){
+            System.out.println("Bangun Termasuk Kubus");
+        }else{
+            System.out.println("Bangun Bukan Kubus");
+        }
+        
+               
+    }
+    
+}
