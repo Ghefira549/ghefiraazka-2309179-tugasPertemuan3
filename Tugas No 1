@@ -1,0 +1,36 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package pkg2309179_ghefira.azka.fatharani_tugas3_.no.pkg3;
+
+/**
+ *
+ * @author FARIZ
+ */
+import java.util.Scanner;
+
+public class AzkaFatharani_Tugas3_No3 {
+
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner inputObjk = new Scanner(System.in);
+        System.out.println("No.3. Menghitung Lama Waktu Bekerja");
+        System.out.print("Masukkan Jam Masuk : ");
+        int jamMasuk=inputObjk.nextInt();
+        System.out.print("Masukkan Jam Keluar : ");
+        int jamKeluar=inputObjk.nextInt();
+        int lamaBekerja;
+        if(jamMasuk<jamKeluar){
+            lamaBekerja = jamKeluar-jamMasuk;
+        }else{
+             lamaBekerja=(jamKeluar+12)-jamMasuk;
+        }
+        System.out.println("Lama Bekerja :" + lamaBekerja + " jam");
+        
+    }
+    
+}
